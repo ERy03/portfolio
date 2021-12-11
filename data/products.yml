@@ -1,4 +1,28 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- name: Kikoe+
+  description: Helping Japanese high school students have a better school life.
+  image: kikoemas.png
+  url: https://www.kikoemas.com/
+  tags:
+    - devicon-rails-plain-wordmark colored
+    - devicon-postgresql-plain-wordmark colored
+    - devicon-heroku-original colored
+    - devicon-javascript-plain colored
+
+- name: Barter
+  description: Rails app that allows users to post and trade their personal items with other users.
+  image: barter.png
+  url: https://barter-exchange.herokuapp.com/
+  tags:
+    - devicon-rails-plain-wordmark colored
+    - devicon-postgresql-plain-wordmark colored
+    - devicon-heroku-original colored
+    - devicon-javascript-plain colored
+
+- name: Longest Word Game
+  description: Try making the longest word from the given letters!
+  image: longest_word_game.png
+  url: https://longest-word-list-game.herokuapp.com/
+  tags:
+    - devicon-rails-plain-wordmark colored
+    - devicon-postgresql-plain-wordmark colored
+    - devicon-heroku-original colored
