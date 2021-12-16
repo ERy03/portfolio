@@ -1,19 +1,16 @@
-<div>
-  <h1>Hello I'm Ryota</h1>
-  <h3><span id="type"></span></h3>
-  <p>This is a list of healthy mix of personal and professional projects.</p>
+<div class="cards-container">
+  <% data.products.each do |product| %>
+    <div class="project-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
+      <h5><%= product.name %></h5>
+      <p><%= product.description %></p>
+      <%# links to website %>
+      <% link_to product.url, class: 'external-link', target: '_blank' do %>
+        <i class="fas fa-external-link-alt"></i>
+      <% end %>
+      <%# icons %>
+      <% product.tags.each do |tag| %>
+        <span><i class="<%= tag %>"></i></span>
+      <% end %>
+    </div>
+  <% end %>
 </div>
-<% data.products.each do |product| %>
-  <div class="" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(product.image) %>)">
-    <h5><%= product.name %></h5>
-    <p><%= product.description %></p>
-    <%# links to website %>
-    <% link_to product.url, class: 'external-link', target: '_blank' do %>
-      <i class="fas fa-external-link-alt"></i>
-    <% end %>
-    <%# icons %>
-    <% product.tags.each do |tag| %>
-      <span><i class="<%= tag %>"></i></span>
-    <% end %>
-  </div>
-<% end %>
